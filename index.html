@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bytesized&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-bar-container">
+            <div class="right-nav-bar">
+                <h1>MAZE</h1>
+            </div>
+            <div class="left-bar-nav">
+                <a href="#home" class="homeM">Home</a>
+                <a href="#featuress" class="featureM">Features</a>
+
+                <a href="#aboutUs" class="AboutM">About Us</a>
+            </div>
+        </div>
+    </nav>
+    <!--1st page-->
+    
+    <div id="home" class="first-part block">
+        <div class="first">
+            <h1 class="welcomeText"><span>Welcome!<br></span> to Our Maze Project</h1>
+            <p>A challenging terminal maze game—can you find your way out?</p>
+        </div>
+        <div class="video">
+            <video width="400" height="350"
+             controls autoplay muted loop playsin line class="welcomeVideo">
+                <source class="welcomeVideo" src="images\maze gif.gif.mp4">
+            </video>
+            </div>
+    </div>
+    
+    <!--second page-->
+    <div class="game-pic block">
+        <div class="image"><img src="images\1stpic.jpg"></div>
+        <div class="image-description">
+            <p>It is ALX default portfolio project that enables a student to create a game in 3D using raycasting. Ray-casting is a techniques that transform a limited form of data into a 3D projection by tracing rays from the view point to the viewing volume.</p>
+        </div>
+    </div>
+
+ <!--third page-->
+ <div class="introduction block">
+    
+    <div class="rayImageContainer">
+        <div class="rayImage"><img src="images/ray1.jpg"></div>
+        <div class="rayImage"><img src="images/ray2.jpg"></div>
+    </div>
+    <div class="rayDescription">
+        <div class="intro">
+            <h1>Introduction</h1>
+            <h2>Ray Casting</h2>
+    
+        <p>this is a 2D game which are developed using ray-casting technique.ray-casting is a techniques that transform a limited form of data(a very simplified map or floor plan) into a 3D projection by tracing rays from the view point inot the viewing volume. Ray-casting sensation began with the release of a game, Wolfenstein 3D(iD software), in 1992. raycasting can go very fast, because only a calculation has to be done for every vertical line of the screen.</p>
+        </div>
+    </div>
+ </div>
+ 
+   <!--fourth page-->
+ <div id="featuress" class="features-section block">
+    <div class="features-container">
+        <!--1st-->
+        <div id="orientation" class="features block">
+            <div class="featureText">Features</div>
+          <div class="features-description">
+
+            <h1>1.Orientation</h1>
+            <p>
+In this part of the project, we have drawn a different color depending on the orientation of the walls. As you can see from the screen shoot, walls facing from one side is drawn in different collor from walls facing from the other side. some of the walls are lighter than the other. some are darker than the other walls
+            </p>
+          </div>
+          <div class="feature-images>"><img class="img1" src="images/orientationImage.jpg"></div>
+        </div>
+       <!--2nd-->
+        <div id="Roatation" class="features block">
+            <div class="features-description">
+              <h1>2.Rotation and Movement</h1>
+              <p>Rotation
+                In this part of the project, we provide a way to rotate the camera during the exectution. the camera is rotated using left & right keys.</p>
+                <p>and we have provided a way to move the camera during the execution.The camera is moved forward by pressing the up from the keyborad. on the other hand the camera is moved backward using down of the keyborad.</p>
+            </div>
+            <div class="feature-images block>">
+                <video class="rotation-video" width="600" height="400" controls autoplay muted loop playsin line>
+                    <source src="images/mov.gif.mp4">
+                </video>
+            </div>
+          </div>
+       <!--3rd-->
+          <div id="collision" class="features block">
+            <div class="features-description">
+              <h1>3.Collision</h1>
+              <p>We detect collision of the player so that the player is not able to enter the walls. I have made the player slide on the walls instead of just stop it.simple change to some direction, then the player will slide on the walls. the application detects when the player approaches the wall. if the player is approaches the threshold value, it will be forced to slide the walls.</p>
+            </div>
+            <div class="feature-images>"><img class="img1" src="images/collission.jpg"></div>
+          </div>
+       <!--4th-->
+          <div id="multiTask" class="features block">
+            <div class="features-description">
+              <h1>4.Multi-Task</h1>
+              <p>move & rotate at the same time
+
+                In this part of the project, I have added a way to move on several directions & rotate in the same time. for example you can move forwared & rotate in clockwise direction at the same time. This is one way of hadnling multiple events on the same frame</p>
+            </div>
+
+          </div>
+      <!--5th-->
+          <div id="rainMode" class="features block">
+            <div class="features-description">
+              <h1>5.Rain Mode</h1>
+              <p>The feature allows users to toggle a rain effect on and off by pressing the "R" key. When the key is pressed, the rain state switches between active and inactive, triggering or stopping a rain animation on</p>
+            </div>
+            <div class="feature-images>"><img class="img1" src="images/rain.jpg"></div>
+          </div>
+    </div>
+ </div>
+
+ <!--future plans-->
+ <div class="feature-plans block">
+    <h1>Future Task</h1>
+    <p>
+        Due to shortage of times we have unable to complete all part of projects.
+        <ul>
+            <li>weapons</li>
+            <li>texture</li>
+            <li>Ground texture</li>
+            <li>Enemies</li>
+        </ul>
+    </p>
+ </div>
+ 
+ <!--about page-->
+ <div id="aboutUs" class="about-Us block">
+    <div class="about-us-text">About Us</div>
+    <div class="about-container">
+        
+        <div class="creators">
+            <ul>
+                <p>Creators</p>
+                <li>Nathan</li>
+                <li>AbdulMerik</li>
+            </ul>
+        </div>
+       <div class="social-container">
+     <div class="socials">
+        
+         <a id="instagram" href="" class="socialIcon"><img  src="icons/instagram.png"> </a>
+         <a id="Twitter" href="" class="socialIcon"><img src="icons/icons8-x-50.png"> </a>
+         <a id="github" href="https://github.com/nati-sahlu" class="socialIcon"><img src="icons/icons8-github-logo-64.png"> </a>
+         <a id="github" href="" class="socialIcon"><img src="icons/linkedIn.png"> </a>
+         
+   </div>
+     <div class="socials">
+        <a id="instagram" href="" class="socialIcon"><img  src="icons/instagram.png"> </a>
+        <a id="Twitter" href="" class="socialIcon"><img src="icons/icons8-x-50.png"> </a>
+        <a id="github" href="https://github.com/AbdulmelikShemsedin" class="socialIcon"><img src="icons/icons8-github-logo-64.png"> </a>
+        <a id="github" href="" class="socialIcon"><img src="icons/linkedIn.png"> </a>
+
+    </div>
+</div>
+     <div class="email">
+        <p>Email:</p>
+        <a href="natansahlu5@gmail.com">natansahlu5@gmail.com</a>
+     </div>
+    </div>
+ </div>
+ <script src="js/script.js"></script>
+</body>
+</html>
