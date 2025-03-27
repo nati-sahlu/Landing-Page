@@ -300,9 +300,11 @@ body{
 
 /* phone */
 @media screen and (max-width:767px){
-    body{
+    html,body{
         margin: 0;
         padding: 0;
+	width:100%;
+	overflow-x:hidden;
     }
     .left-bar-nav{
         position: absolute;
@@ -316,6 +318,9 @@ body{
         margin-top:20px ;
        
     }
+    .nav-bar-container{
+	    width:100%;
+
     .first-part{
         padding-top: 100px;
         display: flex;
@@ -336,7 +341,8 @@ body{
     }
     .image img{
         width: 550px;
-        margin-left: 10px;
+        margin-left: 0px;
+	margin-right:0px;
     }
     .introduction{
         display: flex;
@@ -344,7 +350,7 @@ body{
     }
     .img1{
         width: 500px;
-        margin-left: 5px;
+        margin-left:5px;
     }
     .rotation-video{
         width: 550px;
@@ -358,15 +364,21 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 400px;
+    gap: 20px;
+    width:100%;
   }
   .menu{
     display: block;
     height: 40px;
     cursor: pointer;
+    position:absolute;
+    top:20px;
+    right:20px;
   }
   .escape-menu{
     cursor: pointer;
+    top:20px;
+    right:20px;
   }
  
 }
