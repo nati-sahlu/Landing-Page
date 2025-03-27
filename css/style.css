@@ -83,11 +83,12 @@ html{
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color:transparent;
+    cursor: pointer;
 }
-.right-bar-nav h1{
-    margin-left: 30px;
-    padding-left: 10px;
+.right-nav-bar h1:hover{
+    transform: scale(1.5);
 }
+
 .right-bar-nav h1:hover{
     transform: scale(1.25);
 }
@@ -242,6 +243,10 @@ body{
 .feature-plans h1{
  text-align: center;
 }
+.creators ul li{
+    margin: 13px;
+    list-style-type:none;
+}
 .feature-plans{
     display: flex;
     flex-direction: column;
@@ -258,16 +263,122 @@ body{
     justify-content: center;
 }
 .about-us-text{
-    font-size: 50px;
+    font-size: 15px;
     padding-top: 120px;
+    text-align: center;
 
+}
+.about-us-text h1{
+    font-size: 25px;
+}
+.about-us-text a{
+    color: blue;
 }
 .about-Us{
     color: white;
     background-color: black;
-   
+    
 }
+.menu{
+    display: none;
+  }
+  .escape-menu{
+    display: none;
+
+  }
 .highlight{
     border-bottom: 4px solid rgb(219, 32, 32) ;
     transform: scale(1.26);
+    background-image: linear-gradient(to right,orange,red,purple);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    padding-bottom: 8px;
+    
+}
+
+/* phone */
+@media screen and (max-width:767px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .left-bar-nav{
+        position: absolute;
+        top: -1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 250px;
+        gap: 50px;
+        margin-top:20px ;
+       
+    }
+    .first-part{
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .welcomeVideo{
+        margin-top: 0px;
+        margin-left: 45px;
+
+    }
+    .first span{
+        font-size: 50px;
+        margin-left: 40px;
+    }
+    .first h1{
+        font-size: 35px;
+    }
+    .image img{
+        width: 550px;
+        margin-left: 10px;
+    }
+    .introduction{
+        display: flex;
+        flex-direction: column;
+    }
+    .img1{
+        width: 500px;
+        margin-left: 5px;
+    }
+    .rotation-video{
+        width: 550px;
+        margin-left: 0;
+    }
+    .rayImage img{
+        width: 100px;
+    }
+  .right-nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 400px;
+  }
+  .menu{
+    display: block;
+    height: 40px;
+    cursor: pointer;
+  }
+  .escape-menu{
+    cursor: pointer;
+  }
+ 
+}
+.email a{
+    margin-right: 50px;
+}
+.demo{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    padding-left: 30px;
+    padding-top: 50px;
+    font-weight: bold;
 }
